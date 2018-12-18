@@ -23,6 +23,14 @@ class MyClass {
         }
     }
 
+    function dobleArray($v){
+        return $v*2;
+    }
+
+    function mapArray($a) {
+        return array_map("dobleArray", $a);
+    }
+
     function recorrePorFilas2($arr)
     {
         foreach ($arr as $i => $a) {

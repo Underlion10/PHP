@@ -11,4 +11,6 @@ echo L1\GRAVITY_SPEED . '\n';
 echo L1\MyFunction() . '\n';
 
 $myclass = new L1\MyClass();
-$myclass->recorrePorFilas([[2,4,8,3,7],[3,6,1,8,2]]);
+$a = [[2,4,8,3,7],[3,6,1,8,2]];
+$myclass->recorrePorFilas($a);
+echo $myclass->mapArray($a);
